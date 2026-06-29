@@ -1,0 +1,7 @@
+{"id":"auth-1","category":"auth","input":"User cannot log in with SSO","expected":"Ask for IdP error and recent changes."}
+{"id":"auth-2","category":"auth","input":"Password reset email never arrives","expected":"Check email delivery and tenant settings."}
+{"id":"billing-1","category":"billing","input":"Customer was charged twice","expected":"Route to billing and request invoice IDs."}
+{"id":"billing-2","category":"billing","input":"Invoice export is missing tax ID","expected":"Ask for account and invoice number."}
+{"id":"rag-1","category":"retrieval","input":"Answer cites an unrelated policy page","expected":"Flag retrieval mismatch."}
+{"id":"rag-2","category":"retrieval","input":"Answer has no citation for a numeric claim","expected":"Require grounded citation."}
+
