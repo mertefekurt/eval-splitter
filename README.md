@@ -1,33 +1,34 @@
-![Eval Splitter cover](assets/readme-cover.svg)
-
 # Eval Splitter
 
 Create deterministic stratified splits for LLM evaluation JSONL datasets.
 
-## Working shape
+![Eval Splitter cover](assets/readme-cover.svg)
 
-The repo is meant to be opened, understood, and run quickly. The command surface is deliberately narrow: `eval-splitter`.
+## File map
 
-## Fresh clone
+```text
+.github/        CI workflow
+examples/       sample inputs
+src/            package source
+tests/          test coverage
+.gitignore      project file
+```
+
+## Shape of the tool
+
+![Workflow diagram](assets/readme-diagram.svg)
+
+## Try the sample
 
 ```bash
 git clone https://github.com/mertefekurt/eval-splitter.git
 cd eval-splitter
-python -m venv .venv
-source .venv/bin/activate
 python -m pip install -e ".[dev]"
-```
-
-## First command
-
-```bash
 eval-splitter examples/eval.jsonl
 ```
 
-## Local confidence
+## Project notes
 
-```bash
-ruff check .
-pytest
-python -m eval_splitter --help
-```
+- Designed as a focused model evaluation repo.
+- Keeps setup short.
+- Prioritizes readable output over infrastructure.
